@@ -1,0 +1,52 @@
+object Modulo_Datos: TModulo_Datos
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 277
+  HorizontalOffset = 389
+  VerticalOffset = 673
+  Width = 302
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 144
+    top = 52
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    Port = 0
+    Database = 'E:\Proyectos\Proyecto Soft Educativo\Proyecto Soft Educativo_3 FUNCIONA_2\SIAPro_DB.db3'
+    Protocol = 'sqlite-3'
+    left = 32
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    left = 32
+    top = 52
+  end
+  object ZTable1: TZTable
+    Connection = ZConnection1
+    TableName = 'usuarios'
+    left = 80
+    top = 52
+  end
+  object DataSource2: TDataSource
+    DataSet = ZTable1
+    left = 144
+    top = 104
+  end
+  object ZQuery2: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    left = 32
+    top = 160
+  end
+  object DataSource3: TDataSource
+    DataSet = ZQuery2
+    left = 144
+    top = 160
+  end
+end

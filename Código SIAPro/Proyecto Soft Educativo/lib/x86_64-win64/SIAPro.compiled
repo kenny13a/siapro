@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.0.0\bin\x86_64-win64\fpc.exe" Date="1231859847"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -WG -l -vewnhibq &quot;-FiE:\Proyectos\Proyecto Soft Educativo\Proyecto Soft Educativo_LISTO\Proyecto Soft Educativo\lib\x86_64-win64&quot; -FuE:\Programas\Programación\Lazarus\Add-ons\ZEOSDBO-7.1.4-stable\packages\lazarus\lib\x86_64-win64 -FuC:\lazarus\components\ideintf\units\x86_64-win64\win32 -FuC:\lazarus\components\lazcontrols\lib\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 &quot;-FuE:\Proyectos\Proyecto Soft Educativo\Proyecto Soft Educativo_LISTO\Proyecto Soft Educativo\&quot; &quot;-FUE:\Proyectos\Proyecto Soft Educativo\Proyecto Soft Educativo_LISTO\Proyecto Soft Educativo\lib\x86_64-win64\&quot; -dLCL -dLCLwin32 SIAPro.lpr"/>
+</CONFIG>

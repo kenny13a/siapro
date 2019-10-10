@@ -1,0 +1,2 @@
+﻿En pascal, ¿Cómo se define una 
+constante?

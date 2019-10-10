@@ -1,0 +1,4 @@
+﻿Nombre_variable-tipo de dato
+Nombre_variable-dato
+Tipo de dato-nombre_variable
+Dato-nombre_variable

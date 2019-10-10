@@ -1,0 +1,2 @@
+﻿¿Cuál de estas variables está definida 
+correctamente en Pascal?

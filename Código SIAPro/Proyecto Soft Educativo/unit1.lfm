@@ -1,0 +1,1009 @@
+object Form1: TForm1
+  Left = 367
+  Height = 780
+  Top = 173
+  Width = 1497
+  Caption = 'S I A Pro'
+  ClientHeight = 780
+  ClientWidth = 1497
+  Color = clBtnFace
+  OnClose = FormClose
+  OnShow = FormShow
+  ParentBiDiMode = False
+  LCLVersion = '1.6.2.0'
+  WindowState = wsMaximized
+  object P_principal: TPanel
+    Left = 192
+    Height = 732
+    Top = 48
+    Width = 1305
+    Align = alClient
+    ClientHeight = 732
+    ClientWidth = 1305
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
+    Visible = False
+    object I_principal: TImage
+      Left = 1
+      Height = 30
+      Top = 1
+      Width = 30
+      OnClick = I_principalClick
+    end
+    object p_explicacion: TPanel
+      Left = 64
+      Height = 30
+      Top = 1
+      Width = 34
+      Caption = 'p_explicacion'
+      ClientHeight = 30
+      ClientWidth = 34
+      TabOrder = 0
+      Visible = False
+      object B_Ok: TButton
+        Left = 16
+        Height = 27
+        Top = 512
+        Width = 110
+        Caption = 'OK'
+        Color = clRed
+        OnClick = B_OkClick
+        TabOrder = 0
+        Visible = False
+      end
+      object B_anterior: TButton
+        Left = 152
+        Height = 35
+        Top = 512
+        Width = 111
+        Caption = 'Anterior'
+        Enabled = False
+        OnClick = B_anteriorClick
+        TabOrder = 1
+        Visible = False
+      end
+      object B_siguiente: TButton
+        Left = 272
+        Height = 35
+        Top = 512
+        Width = 111
+        Caption = 'Siguiente'
+        OnClick = B_siguienteClick
+        TabOrder = 2
+        Visible = False
+      end
+      object B_terminar: TButton
+        Left = 400
+        Height = 36
+        Top = 512
+        Width = 111
+        Caption = 'Terminar'
+        OnClick = B_terminarClick
+        TabOrder = 3
+        Visible = False
+      end
+    end
+    inline f_eva_prof1: Tf_eva_prof
+      Left = 5
+      Height = 30
+      Top = 210
+      Width = 1054
+      ClientHeight = 30
+      ClientWidth = 1054
+      TabOrder = 7
+      inherited P_eva_prof_superior: TPanel
+        Width = 1054
+        ClientWidth = 1054
+        inherited SB_Eva_prof_cerrar: TSpeedButton
+          Left = 1006
+          OnClick = SB_Eva_prof_cerrarClick
+        end
+      end
+      inherited P_eva_prof_principal: TPanel
+        Height = 0
+        Top = 30
+        Width = 1054
+        ClientHeight = 0
+        ClientWidth = 1054
+        inherited P_eva_prof_listado: TPanel
+          Left = 873
+          Height = 0
+          Top = 0
+          ClientHeight = 0
+          inherited DBG_eva_prof_listado: TDBGrid
+            Height = 0
+            Top = 0
+            OnCellClick = DBG_eva_prof_listadoCellClick
+            OnKeyUp = DBG_eva_prof_listadoKeyUp
+          end
+        end
+        inherited Splitter_eva_prof: TSplitter
+          Left = 868
+          Height = 0
+          Top = 0
+        end
+        inherited P_eva_prof_Contenedor: TPanel
+          Height = 0
+          Top = 0
+          Width = 867
+          ClientHeight = 0
+          ClientWidth = 867
+          inherited P_eva_prof_superior2: TPanel
+            Top = 0
+            Width = 865
+            ClientWidth = 865
+            inherited UpD_eva_prof_1: TUpDown
+              OnChanging = UpD_eva_prof_1Changing
+              OnClick = UpD_eva_prof_1Click
+            end
+          end
+          inherited PC_eva_prof_1: TPageControl
+            Height = 0
+            Top = 0
+            Width = 865
+            OnChange = PC_eva_prof_1Change
+            inherited TS_eva_prof_notas: TTabSheet
+              ClientHeight = 0
+              ClientWidth = 857
+              inherited SB_eva_prof_1: TSpeedButton
+                OnClick = SB_eva_prof_1Click
+              end
+              inherited SB_eva_prof_2: TSpeedButton
+                OnClick = SB_eva_prof_2Click
+              end
+              inherited SB_eva_prof_3: TSpeedButton
+                OnClick = SB_eva_prof_3Click
+              end
+              inherited SB_eva_prof_4: TSpeedButton
+                OnClick = SB_eva_prof_4Click
+              end
+            end
+            inherited TS_eva_prof_rendimiento: TTabSheet
+              ClientHeight = 353
+              ClientWidth = 857
+            end
+            inherited TS_eva_prof_respuestas: TTabSheet
+              ClientHeight = 353
+              ClientWidth = 857
+              inherited TC_eva_prof_respuestas1: TTabControl
+                Height = 353
+                Width = 857
+                OnChange = TC_eva_prof_respuestas1Change
+                TabIndex = 1
+              end
+            end
+          end
+        end
+      end
+    end
+    inline F_ejr1: TF_ejr
+      Left = 5
+      Height = 30
+      Top = 90
+      Width = 1219
+      ClientHeight = 30
+      ClientWidth = 1219
+      TabOrder = 3
+      inherited B_ejr_1: TButton
+        OnClick = B_ejr_1Click
+      end
+      inherited B_ejr_2: TButton
+        OnClick = B_ejr_2Click
+      end
+      inherited B_ejr_3: TButton
+        OnClick = B_ejr_3Click
+      end
+      inherited B_ejr_4: TButton
+        OnClick = B_ejr_4Click
+      end
+      inherited p_ejercitacion: TPanel
+        inherited B_verificar: TButton
+          OnClick = B_verificarClick
+        end
+        inherited Label1: TLabel
+          Width = 206
+          Caption = 'Ejercitación Unidad '
+        end
+        inherited B_limpiar: TButton
+          OnClick = B_limpiarClick
+        end
+        inherited B_ejr_volver1: TButton
+          OnClick = B_ejr_volver1Click
+        end
+        inherited B_ejr_cerrar1: TButton
+          OnClick = B_ejr_cerrar1Click
+        end
+        inherited GB_ejr_resultados: TGroupBox
+          inherited B_ejr_corregir: TButton
+            OnClick = B_ejr_corregirClick
+          end
+        end
+      end
+      inherited P_ejr_superior: TPanel
+        Width = 1219
+        ClientWidth = 1219
+        inherited B_ejr_volver2: TButton
+          OnClick = B_ejr_volver2Click
+        end
+        inherited B_ejr_cerrar2: TButton
+          Left = 1143
+          OnClick = B_ejr_cerrar2Click
+        end
+      end
+    end
+    inline f_administrar1: Tf_administrar
+      Left = 5
+      Height = 30
+      Top = 180
+      ClientHeight = 30
+      TabOrder = 6
+      inherited P_adm_superior: TPanel
+        inherited SB_adm_cerrar: TSpeedButton
+          OnClick = SB_adm_cerrarClick
+        end
+        inherited SB_adm_agregar: TSpeedButton
+          OnClick = SB_adm_agregarClick
+        end
+        inherited SB_adm_eliminar: TSpeedButton
+          OnClick = SB_adm_eliminarClick
+        end
+        inherited SB_adm_editar: TSpeedButton
+          OnClick = SB_adm_editarClick
+        end
+        inherited SB_adm_buscar: TSpeedButton
+          OnClick = SB_adm_buscarClick
+        end
+      end
+      inherited P_adm_listado: TPanel
+        inherited GB_adm_usuarios: TGroupBox
+          inherited TC_adm_usuarios: TTabControl
+            OnChange = TC_adm_usuariosChange
+            inherited DBG_adm_grid1: TDBGrid
+              Columns = <              
+                item
+                  PickList.Strings = (                  )
+                  Title.Caption = 'nombre'
+                  Width = 243
+                  FieldName = 'nombre'
+                end>
+              OnCellClick = DBG_adm_grid1CellClick
+              OnKeyUp = DBG_adm_grid1KeyUp
+            end
+          end
+        end
+        inherited GB_adm_datosusuario: TGroupBox
+          inherited PC_adm: TPageControl
+            OnChange = PC_admChange
+            inherited TS_adm_notas: TTabSheet
+              ClientHeight = 117
+              ClientWidth = 381
+            end
+            inherited TS_adm_rendimiento: TTabSheet
+              ClientHeight = 117
+              ClientWidth = 381
+            end
+          end
+          inherited GroupBox1: TGroupBox
+            inherited UpDown1: TUpDown
+              OnClick = UpDown1Click
+            end
+          end
+        end
+        inherited GB_adm_usuarios1: TGroupBox
+          Left = 18
+          Height = 179
+          Top = 128
+          ClientHeight = 159
+          inherited DBG_adm_grid2: TDBGrid
+            Height = 159
+            Columns = <            
+              item
+                PickList.Strings = (                )
+                Title.Caption = 'nombre'
+                Width = 247
+                FieldName = 'nombre'
+              end>
+            OnCellClick = DBG_adm_grid2CellClick
+            OnKeyUp = DBG_adm_grid2KeyUp
+          end
+        end
+      end
+      inherited P_adm_nuevo: TPanel
+        inherited GB_adm_nuevo_usuario: TGroupBox
+          inherited CB_adm_apodo: TCheckBox
+            OnClick = CB_adm_apodoClick
+          end
+          inherited CB_adm_contra: TCheckBox
+            OnClick = CB_adm_contraClick
+          end
+        end
+        inherited SB_adm_nuevo_aceptar: TSpeedButton
+          OnClick = SB_adm_nuevo_aceptarClick
+        end
+        inherited SB_adm_nuevo_cancelar: TSpeedButton
+          OnClick = SB_adm_nuevo_cancelarClick
+        end
+      end
+    end
+    inline F_eva1: TF_eva
+      Left = 5
+      Height = 30
+      Top = 120
+      ClientHeight = 30
+      TabOrder = 4
+      inherited GB_eva_u1: TGroupBox
+        inherited DBT_eva_u1A: TDBText
+          DataField = 'u1A'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_u1E: TDBText
+          DataField = 'u1E'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_u1N: TDBText
+          DataField = 'u1N'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_nota1: TDBText
+          DataField = 'Nu1'
+          DataSource = Modulo_Datos.DataSource1
+        end
+      end
+      inherited GB_eva_u2: TGroupBox
+        inherited DBT_eva_u2A: TDBText
+          DataField = 'u2A'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_u2E: TDBText
+          DataField = 'u2E'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_u2N: TDBText
+          DataField = 'u2N'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_nota2: TDBText
+          DataField = 'Nu2'
+          DataSource = Modulo_Datos.DataSource1
+        end
+      end
+      inherited GB_eva_u3: TGroupBox
+        inherited DBT_eva_u3A: TDBText
+          DataField = 'u3A'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_u3E: TDBText
+          DataField = 'u3E'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_u3N: TDBText
+          DataField = 'u3N'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_nota3: TDBText
+          DataField = 'Nu3'
+          DataSource = Modulo_Datos.DataSource1
+        end
+      end
+      inherited GB_eva_u4: TGroupBox
+        inherited DBT_eva_u4A: TDBText
+          DataField = 'u4A'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_u4E: TDBText
+          DataField = 'u4E'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_u4N: TDBText
+          DataField = 'u4N'
+          DataSource = Modulo_Datos.DataSource1
+        end
+        inherited DBT_eva_nota4: TDBText
+          DataField = 'Nu4'
+          DataSource = Modulo_Datos.DataSource1
+        end
+      end
+      inherited P_eva_superior: TPanel
+        inherited B_eva_cerrar1: TButton
+          OnClick = B_eva_cerrar1Click
+        end
+      end
+      inherited Img_eva_1: TImage
+        Visible = False
+      end
+      inherited Img_eva_2: TImage
+        Visible = False
+      end
+      inherited Img_eva_3: TImage
+        Visible = False
+      end
+      inherited Img_eva_4: TImage
+        Visible = False
+      end
+    end
+    inline F_c_contra1: TF_c_contra
+      Left = 5
+      Height = 30
+      Top = 150
+      ClientHeight = 30
+      TabOrder = 5
+      inherited DBT_c_contra_usuario: TDBText
+        DataField = 'apodo'
+        DataSource = Modulo_Datos.DataSource1
+      end
+      inherited B_c_contra_cambiar: TButton
+        OnClick = B_c_contra_cambiarClick
+      end
+      inherited B_c_contra_cerrar: TButton
+        Visible = False
+      end
+      inherited DBT_c_contra_contra0: TDBText
+        DataField = 'contra'
+        DataSource = Modulo_Datos.DataSource1
+        Visible = False
+      end
+      inherited P_c_contra_superior: TPanel
+        inherited B_c_contra_cerrar1: TButton
+          OnClick = B_c_contra_cerrar1Click
+        end
+      end
+    end
+    inline F_exp: TFrame1
+      Left = 5
+      Height = 30
+      Top = 30
+      ClientHeight = 30
+      TabOrder = 1
+      inherited B_explicacion_1: TButton
+        OnClick = B_explicacion_1Click
+      end
+      inherited B_explicacion_2: TButton
+        OnClick = B_explicacion_2Click
+      end
+      inherited B_explicacion_3: TButton
+        OnClick = B_explicacion_3Click
+      end
+      inherited B_explicacion_u4: TButton
+        OnClick = B_explicacion_u4Click
+      end
+      inherited B_exp_cerrar: TButton
+        OnClick = B_exp_cerrarClick
+      end
+      inherited P_exp_1: TPanel
+        inherited P_exp_1_1: TPanel
+          inherited B_exp_6: TButton
+            OnClick = B_exp_6Click
+          end
+          inherited B_exp_7: TButton
+            OnClick = B_exp_7Click
+          end
+          inherited B_exp_8: TButton
+            OnClick = B_exp_8Click
+          end
+          inherited B_exp_9: TButton
+            OnClick = B_exp_9Click
+          end
+        end
+      end
+      inherited P_exp_superior: TPanel
+        inherited B_exp_10: TButton
+          OnClick = B_exp_10Click
+        end
+        inherited B_exp_11: TButton
+          OnClick = B_exp_11Click
+        end
+      end
+    end
+    inline F_contenidos1: TF_contenidos
+      Left = 5
+      Height = 30
+      Top = 60
+      Width = 787
+      ClientHeight = 30
+      ClientWidth = 787
+      TabOrder = 2
+      inherited P_contenidos_1: TPanel
+        Width = 787
+        ClientWidth = 787
+        inherited B_contenidos_exp: TButton
+          OnClick = B_contenidos_expClick
+        end
+        inherited B_contenidos_ejr: TButton
+          OnClick = B_contenidos_ejrClick
+        end
+        inherited B_contenidos_eva: TButton
+          OnClick = B_contenidos_evaClick
+        end
+        inherited B_contenidos_cerrar: TButton
+          Left = 743
+          OnClick = B_contenidos_cerrarClick
+        end
+      end
+      inherited I_contenidos_1: TImage
+        Height = 0
+        Top = 30
+        Width = 787
+      end
+    end
+  end
+  object P_superior: TPanel
+    Left = 0
+    Height = 48
+    Top = 0
+    Width = 1497
+    Align = alTop
+    ClientHeight = 48
+    ClientWidth = 1497
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 1
+    Visible = False
+    object B_unidad1: TButton
+      Left = 280
+      Height = 32
+      Top = 8
+      Width = 133
+      Caption = 'Unidad 1'
+      OnClick = B_unidad1Click
+      TabOrder = 0
+    end
+    object B_unidad2: TButton
+      Left = 460
+      Height = 32
+      Top = 8
+      Width = 133
+      Caption = 'Unidad 2'
+      OnClick = B_unidad2Click
+      TabOrder = 1
+    end
+    object B_unidad3: TButton
+      Left = 652
+      Height = 32
+      Top = 8
+      Width = 133
+      Caption = 'Unidad 3'
+      OnClick = B_unidad3Click
+      TabOrder = 2
+    end
+    object B_unidad4: TButton
+      Left = 843
+      Height = 32
+      Top = 8
+      Width = 133
+      Caption = 'Unidad 4'
+      OnClick = B_unidad4Click
+      TabOrder = 3
+    end
+    object Image1: TImage
+      Left = 8
+      Height = 42
+      Top = 1
+      Width = 187
+      Picture.Data = {
+        0A544A706567496D616765981D0000FFD8FFE000104A46494600010101004700
+        470000FFDB004300020101020101020202020202020203050303030303060404
+        0305070607070706070708090B0908080A0807070A0D0A0A0B0C0C0C0C07090E
+        0F0D0C0E0B0C0C0CFFDB004301020202030303060303060C0807080C0C0C0C0C
+        0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C
+        0C0C0C0C0C0C0C0C0C0C0C0C0CFFC00011080046013203012200021101031101
+        FFC4001F0000010501010101010100000000000000000102030405060708090A
+        0BFFC400B5100002010303020403050504040000017D01020300041105122131
+        410613516107227114328191A1082342B1C11552D1F02433627282090A161718
+        191A25262728292A3435363738393A434445464748494A535455565758595A63
+        6465666768696A737475767778797A838485868788898A92939495969798999A
+        A2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6
+        D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F01000301
+        01010101010101010000000000000102030405060708090A0BFFC400B5110002
+        0102040403040705040400010277000102031104052131061241510761711322
+        328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728
+        292A35363738393A434445464748494A535455565758595A636465666768696A
+        737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7
+        A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3
+        E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00FDFC
+        A466DB4336DAF33F8EBFB4141F0CA036364A975ACCA99D84FCB6E0FF00137BFA
+        0F6AA841CDF2C4DF0F87A95EA2A7495DB3B9F12F8CF4CF07591B8D4EF6DECE25
+        19CC8D827E83A9AF32D7FF006CCD074E9196CAC6FAFF001D1C95851BE84E4FE9
+        5F3C7897C55A878C35492F352BB92EE7739DCE7803D97A0FA5678E093DCF53DC
+        D7A74F0114BDFD4FAEC370E518ABD76DBFB97F99F425AFEDB76AD20F3FC3D731
+        A1EE9741CFE19500FE75D87847F69DF0B78B2548BED4FA7CEFC04BB5F2C67FDE
+        CEDFD6BE4BC0CF6FF1A0807390BC8F4EB572C0D26B4D0DEA70F6124AD14D7CFF
+        00CCFBC1F51892D3CF324621DBBBCC2C3663D735CF5DFC65F0F59DCF94DA8239
+        1D4A46EC07E20115F1669BF1D356D06F3FB3FED37171A244DCDA96F9571FC43E
+        95E99A56AB06B3A7C5736D20960946E0C3B7AE7DEB0960793E2679753873D8EB
+        56574F6B7EA7D43A2F892CBC456FE6D95CC3709D4ED3923EA3AD5E0735F34785
+        FC4B75E12D5E2BAB472ACADCA0E920F4AFA1BC2DE25B7F1568F0DEDB38292AE4
+        AF743DC1AE4AD4793D0F1B1B82741DD6A99A54553BED76D34C04DC5D5BC0075D
+        F201FD6A8C3F10F43B894226AD60CC7B09464D64A2DEC71AA727AA4FEE36A8A8
+        E0B94B940F1B23A1E8CA720D3C1C93488168A2B2B54F1A691A25D8B7BDD574EB
+        49C8DDE5CD7291B01EB82738A6937A21C62E4ED1573568AC3FF8591E1DEDAFE8
+        FF00F81D17FF001553D878D748D625F2ED356D36E6427858AE51CFE40D3E5976
+        29D2A8B5717F71AB45461CEE1D707F5A8B54D56DB48B469EEAE60B5813EF492B
+        8445FA93C0A9215DEC59A2B0CFC47F0F9E9AEE907D7FD3633FFB355FD235CB3D
+        7601358DE5B5E439C6F865122FE60D3716B745CA9CA2AF24D1768A6C87086B37
+        52F18695A34FE55EEA9A7DA49FDC9AE5236FC891424DEC4C62E4ED1573528AC3
+        3F123C3A3A6BDA3FFE0745FF00C5558D2BC5DA66B9232D96A56378C8373882E1
+        642A3D783C0A1C5AE853A734AED346A515867E236811BB2BEBBA42B236D606F6
+        3041F43CF5A3FE1647874FFCC7F471FF006FD17FF154F925D87ECAA7F2BFB8DC
+        A2AAE9DA9DBEAD12CD697305D42DD1E2903A9FC455973B549F4A969ADC869AD1
+        8B45624DF1174182778E4D6F498DE36DACAD79182A7D0F3C521F891E1DC7FC87
+        F471FF006FD17FF1555C92EC5FB2A9FCAFEE3728AA9A5EB16DAC42B2DA5D4177
+        09E8F0C82453F88E2ADD4FA99B4D68C28A4638154B51D76D346884B7B796D691
+        9E034D2AC6A7F1240A2C349B7645EA2B3F4AF12E9FAE293657F677817A982759
+        31F91ABE8723BFE347A838B4ECD585A28A2811CFFC4FF1AC7F0FBC157DAABE0B
+        5BA6225FEFC87851F9D7C61AC6B171AFEA9717B772196E2E9CC8ECDC939AF7DF
+        DB535F68B48D1B4C53817133DC3FFC036819FF00BE8FE55F3C8C6D18FC07A0CD
+        7AF81A76873773EE38770B1861FDB3DE5F920A28A2BB4FA00A43D0FD29680714
+        01C05F4461BC911BEF46E73F5F5AEC3E0EF8DC681AA7D86E64DB677470A58F11
+        B9FE87FA0AA3E27F0CBDE399EDC02F8E57FBD5CF4D613DB921E1957D72B5BBE5
+        9C6CCEC94615A9F233E8D001503AE47F9E7FCF5AB365ABDD69E192DEE66815BA
+        AC7291FCABC57C3DF1AF53D16C12DA68E2BD118DAAD2921B1F81A8B55F8D1ADD
+        F9611491DA29ED1AF23F135C9F5595EC789FD9355BB3B58F699E792E24DD2BBC
+        8C7A9763934DC8278ED5E1967F14F5DB39C3FF00684B2F3CAB8041AF41F87BF1
+        662F14CAB697AA96D7A7EE9CFCB27B7D694F0F28AB935B2EAB4A375AAF23D23C
+        31E36D4BC2374B25A5CB2A03CC6C728DEC457B8FC3DF1EC1E39D27CE40229E3C
+        096227254FAFD0D7CF03B7F9FC2BA0F865E286F0AF8BADA52E56099C4530EDB4
+        9C7E84FF003AE2AD49495FA9E063B071AB0725F123E8753915F26FFC157744B4
+        1F0CBC3BA808225BE5D4FECEB3630FB0C4E704F5232338AFAC52BE5EFF0082AB
+        69F2DC7C0DD1A645263B6D5D1A5207DC063751FA9158E5EFFDA207270CCAD9A5
+        1D7AFE87C082576C7CCC7BF7E7B76E94F83509ECE659219A48A48CEE57590860
+        47B83D7E95ECFF00F04FBF14E93E16FDA474E7D626B6B6B5BBB79ADE369F1B04
+        8CBF2824F427A0FAD7DD3FB47FC19D27E2AFC1ED6AC5B4882F2ED6D1E4B03146
+        A268E60B9428472092077E6BDFC4E3D51A8A9CA3A3EBFD23F4ACDB892181C5C7
+        0D5695E32B7BD7EFE56E9D753E70FD83BF6D9D52F7C5169E0BF175ECB7F0DE7E
+        EB4EBF9DB32C4F8CAC4E4F2C081C31EF815F6378AF48B7D7BC377F67790C5736
+        B3C0E92472A86571B4F041AFCC8F08FECAFF0014342F146997A9E0ED7ADE4B3B
+        A8A51208802855836739E3A57E9F5F96FEC99C9186F25BF0F94D7939953A71AA
+        A74BA9F13C5D85C2D2C542BE0E4BDEDF95AD1AB6BA6D73F1D3511E46A33A2161
+        1C72B2A8DC4E154F02BF59BE0268769E1DF82DE16B7B2823B588E956D2954503
+        73344ACCC71D4924E4D7E4CEAFFF00216BBFFAEF27FE855FAE1F07801F077C29
+        C0C7F635A7FE884AECCE7F870FEBA1EE71EB7EC28A5D5BFC91F2F7EDF3FB6B6A
+        5E15D7AE3C11E12BB7B49EDD40D52FE23FBC8D9867C943D881824FB915F17DE6
+        A573A84CF34F713CF2B9CB4924858B1F524F39ADCF8C1A94BACFC59F135D5C39
+        79AE354B991C9E7ACAC7F4FE42BF46FF00632F853A17843F67FF000CCF69A6DA
+        7DA754B18EF2EA768D5E499E450DCB11920670076ADA5529E0E8C5A8DDB3D0A9
+        88C364197D370A7CCE56BF46DDAEDB767F71F9886673C863F2FA1E87A8FD315F
+        A23FF04CDD02CED7F6708AFE2B7856F2FAFAE3CF9C005E4DAFB4027AE3033F8D
+        7C91FB764096FF00B54F8AD23444459610154600FDC467A7D6BEC3FF00826C73
+        FB2CD89EE6F6E7FF0043A8CCE7CF8553EF6FC8C78B711EDB27A75969CCE2EDEA
+        9BB1F2AFFC145746B5D07F69CD556CA08ED56E2D6099C44368691A319620773D
+        7DEBC2C4EDFDE6C13D738CF7EE7DFA57BEFF00C14B4E3F6A3BCF6B1B5C7B7C95
+        EF3FF04AFD36DEF3E07EB2D3410C8C358600BA0240F2A33DFDEB68E27D8E1215
+        1ABE88ED866BF51C968E2A51E6F763A5EDBDBC99F17FC33F8CBE24F83FAFC7A9
+        787F55BBB19A260CE8242D14B8FE19133823EB5FA57FB2D7ED0769FB467C3287
+        57445B7BFB76FB3DFDB06CF9530EE3FD96EA2BE4BFF82A1F80743F08FC4ED12F
+        74BB6B6B2BCD56D1DEF228502072AE42C840EE7A67BE335D17FC124AF661E20F
+        1A5AE5BECDF67B69B6F657DCE33F5C57363634EBE196212B3FF82797C43470F9
+        8E50B338C7964ACFCF7B34FBF91C0FFC14BB48B5D0FF0069373690476DF6AD36
+        19A6F2C6DDEE4B65B8EE78E6BE7E32B824176C8E080DDFD393E95F45FF00C150
+        FF00E4E3E2FF00B0441FFA1495EAFF00F04A4B186EBE1C78A8CB0C5295D46303
+        7A06C7C87D6BA2188F63838D46AFA23D4A199FD4724A58A9479ACA3A5EDBE9BD
+        99F1E7C3AF8B3E21F853E208B52F0FEAD79A7DCC6C09F2E42524C7675E8C3D9B
+        8AFD27FD927F69183F692F868BA8BAA5B6AD60C20D42DD0E555F190EBFECB0E4
+        7E35F33FFC1537E1F685E16F16787754D36D6DACF53D4D255BA4854279EA8415
+        72A3B82719EF9F6A4FF824D5E4C3E2878A6D8331B6934B4918678DEB2A853F5C
+        135863234F1185F6E959AFF33CCCF69E1F32CA3FB4A31E592D7CF7B34FBAEC7D
+        1FFB637ED3917ECD7F0ED6E2054B9D6F53630D844E7E552064C8DECA3F33815F
+        9BDE3CF89FE20F897AECBA8EBDAB5EEA3792124B4B29DA067A2AE70AA3A6057D
+        07FF000556D4E69BE39E896ACC4C36DA32491A670373CD267F3D8BF90AE8BFE0
+        963F0C346D7CF8935FBFB282F750B0963B6B679A30C220CA4B3A83C027A67D01
+        F5A30AA9E1B0BEDDABB6564D0C3E55942CC250E693D7CF5764AFD11F27787BC5
+        DAAF843548EFB4BD42F6C2EE1F9E39A095908FC4638FAD7E84FEC23FB5CCBFB4
+        0E8771A36B8C83C4DA4461DE451B05EC5F77CCDBD981E180F515CCFF00C14E7E
+        17688DF082DFC471D85B41ABD95F45089E38C2B4C8E18147C75E808CFBD7CF5F
+        F04EAD4A6B2FDADFC33147210B7715E4328FEF28B59A4FFD0957F215559D3C5E
+        15D6B59ABFE05E3A586CE7289E339396504DAEEB9757AF54D1FA63451457CD9F
+        949F3AFEDAB0B8F10E8AE4651A07007B8619FE62BC48F41CE7FC2BE98FDB0FC2
+        2DAC7816D353890BBE933EE7C7511B6013F8103F5AF9980C76C57B58395E923F
+        40C86A2960E2974BAFC428A28AEA3D80A01C1A28A0007148C383F97AD2D1401C
+        C78D74D4B6B88A68D4209786C74AC2FCFF003AECBC57646F34872B92D1B6F02B
+        8D1D2BA29BBA3BA84AF10A7C53BC12AC88DB1D086523820E7AD3283F9D686C7B
+        CFC3CF137FC257E17B7B97399D7F772FB91DEB710ED914F6079FCAB82F8048DF
+        F08D5E313956B8CA9EDD39AF51F047875FC53E28B3B34076BB869187F0A0E49A
+        F26AA516CF91C6A8D2A93EC8FA2744677D26D59FEF9850B7D71CFEB5CDFC6FF8
+        5163F1AFE18EA9E1DBFF00963BF8F11498C98640728E3E8C07EB5D5C202AE074
+        1C63D2B90F8C5F1C7C3BF02743B6D4BC4977259D9DDCFF006746485E525F696C
+        6141EC0D7914F99C9726FD0F89C37B575A2F0E9F35EEADBDFC8FCC1F8CFF0002
+        FC47F023C4D269BAF58CB0A87FDC5DAA1F22EC0E8E8DD09C0E471CD7A17ECF1F
+        B7978B7E08BC3617923F887408C81F64BA7266857FE99C87EEFD0E457D8FE1BF
+        DA1FE16FED4F7D2F84EDDD35C7B985A56B6B9D3E455DAA393B99400475C839AF
+        9E7F6ACFF82732F80F40D43C4BE0DB97934DB24335C699392D2429DCC6FF00C4
+        075C37381D6BE8618B854FDCE2A367E7FD687E9D433CA18C4B039C52E49BB6E9
+        D9DFAAEAAFF7799F577C07FDA1BC35FB42787BEDFA0DD06961C0B9B4906D9ED9
+        BD187A7B8E2BB7D5801A55CF1FF2C9BFF4135F951FB2FF00C5EBBF82FF001A74
+        5D5EDA4912DA59D2DEF2304813C2C406040EB8CE47B8AFD54D51B3A65CFF00D7
+        27FC7E535E5E3B07EC2A251D99F1BC49922CB712A34DDE12DAFBF9A3F1CF57FF
+        0090B5DFFD777FFD0ABF5BFE0F0CFC1DF0AFFD81AD7FF44257E486AFFF00216B
+        BFFAEEFF00FA157EB87C1EFF00923BE15FFB035AFF00E884AF4339FE1C3FAE87
+        D4F1EFF0687ABFC91F943F13067E23F8807AEA371CFA7EF1B9AFA67E16FF00C1
+        4E22F873F0E744D09BC272DC9D22CE2B4F3BEDC13CDDAB8DC06C38E95F337C4C
+        E7E23F883AFF00C842E3A7FD746AF73F87FF00F04D5F157C45F03E95AF5AEBFE
+        1F82DB58B54BB8924F3B72075040384C77AEDC42C3BA71FAC6DFF00FA2CDA196
+        CB0D4D664ED1E9BEF6F2B1E45F1F7E2AAFC6BF8B5AC78996CFFB3C6A92237D9C
+        C9E618F6C613AE07F76BEEFF00F826BFFC9AC587FD7EDD7FE875F037C63F8617
+        7F063E23EA5E1ABEB8B7BABAD319564920CF96DB915C63760FF157DF3FF04D7F
+        F9358B0FFAFDBAFF00D0EB9B33E5FAAAE4DB4B1E37172A4B28A6A8FC178DBD2C
+        EDF81F2F7FC14B8E3F6A2BE3FF004E16BFFA01AF3EF859FB4EF8DFE0AE873699
+        E1AD69B4FB2B89BED12462DE29773E36E72C848C8515E83FF052EFF93A3BDF6B
+        0B53FF008E1AEBBF616FD913C1DFB407C31D4B55F11417D25DDB6A2D6CA61B96
+        897688E36E83DD8D6D0A94E18484AAABAB2F33BE8E2B0B87C928D4C6479A1CB1
+        D2C9F4D3467CDDE36F1DEBFF00167C50DA8EB37B77AC6A97388D59C1763D82AA
+        81C0EC0018AFD02FF827E7ECF177F047E174F7BAB426DF59F103ACF2C27EF5BC
+        407EED0FBF2491EA6BB0F851FB1EFC3EF83DAA25EE91A142F7F19CA5CDD3B5C4
+        B19C755DD90BF857A83280380057978ECC15487B2A4AC8F8DE20E28A78BA0B09
+        84872D3EBD36D924B448FCEEFF0082A1FF00C9C845CE33A4C033FF000292BCB7
+        E13FED23E32F821A75DDAF867566D32DEFA5134C82DA39773018FE3527F215EA
+        5FF054438FDA3E239C634883FF004292BC8F4BF84573AD7C13D4FC63680C91E8
+        DA8A59DE47827623A928FF004DDC1FA8AF5F0DC8F0D05536B23EEF2A54259550
+        86212716A2B5B357E9B999F107E246BFF16FC4DFDA7E20D42EB55D46401159F9
+        C2E78555038FA015F787FC13A7F674BDF83FF0FEEF5CD6ADCDB6B1E220856071
+        F3DBC0BF741F42C4E48FA57C8FFB167C40D23E1BFED01A3DC6B76569736174FF
+        0065F32E2356FB1BB7FAB9467A107A9EB835FA8B1B075CA905480463A62B8736
+        AD2825422AC9FF00563E738D31F528538E5F4A1CB0693BAEB6E8974F33F3F3FE
+        0AA3C7ED09A67FD8121FFD1D357A5FFC125B8F0578BFDEF61FFD00D79A7FC154
+        7FE4E0F4CFFB0243FF00A3A6AF4BFF00824B1CF827C5FF00F5FB0FFE8069D6FF
+        009172F45F9978FF00F92621E91FCCED3FE0A6A31FB333FF00D84ADFFF0066AF
+        943FE09E9FF2781E10FF00B7DFFD22B8AFABFF00E0A6BFF26CCFFF00613B7FFD
+        9ABE50FF00827A7FC9E07843FEDF7FF48AE28C0FFB8CFF00EDEFC85C3FFF0024
+        ED7F4A9FFA49FA71451457CF9F991535BD260D774C9ECEE50496F728639148CE
+        E0462BE3BF8B3F0BEF3E17789E4B3955A4B49097B69B1C489FE23B8F7AFB3997
+        7562F8E3C07A678FF43934FD4E01342FF303FC51B76607B1AE9C3E21D37E4CF5
+        32ACC9E12A6BAC5EFF00E67C45457A4FC4AFD99B5EF044D24F67149AB69C0961
+        242B99107A328E7F102BCE2685A090ABA98D8750C08C7B7D6BD88548CD5E2CFB
+        DA189A55A3CD4A574368A4CE471D7F956B785BC13AB78CEF560D32C2E6EDDBA9
+        45F9147A963C0AA6D2D59ACE518ABC9D9195DABAEF067C0DF1378F2CFED161A7
+        94B7FE196E1BCA57FA67AFF2AF61F847FB28DA6832457FE2168AFAE970CB6E9C
+        C319F73D58FE9F5AF6586D52DE3548D42220C2AA8C051E83D2B82B6392D29EA7
+        CD63B88A307C98657F37B7C8F887C5FE05D53C0FA81B5D56CA5B572382C32927
+        D1BA1AF3FF0011F861ED2579A005E33C95C72A6BF433C5DE0DD37C6DA53596A7
+        6B1DD40E3A37543EAA7B1AF11F17FEC63325C349A26A91988E4886E970CBEDB8
+        707F2AD2863E3F6F4674E5DC494A5A56F75FE0CF91FA75E08F5E2A6B0D3A6D52
+        F23B7B74692798854503D4F5FA57D1F69FB0CEADAB5E0FB74BA6DA293CBA3B3B
+        7E0062BD53E1B7EC8DE12F87F006FB3CB7F7847CF3CCE727D801D057454CC294
+        568EE7A589E25C1D28DE0F99F91E3FF0DBC073D86956BA5D94325C5C0FBE1173
+        F39EB9F41EF5F427C2BF8689E08D35A49F6C9A85C0FDEB81C28EBB45745A4787
+        ACB418447676D15BA018C22804FE3D4D5C0B8AF1EB621CCF86C76673C4369689
+        82AEDCFBD7827FC144FE17DDFC46FD9E2EA4D3E269EEB42B84D43CB5196745CA
+        BE077214938F6AF7CA64F12C9132B2AB0618208C823D2B3A355D39A9AE873607
+        172C2E2218886F1773F243E077C63D47E047C48B2F11E9A91CB35A168E482404
+        2CD1B0C3A9E0E323DB835F49F8EBFE0A8B65E31F03EA9A4FFC21F75049A8D9C9
+        6E5FEDEAE232EB8CE360E39AECBE3DFF00C132F48F1D6B536ABE11D463D02E6E
+        58BCD693217B52C4F2571CA7AE0647B57960FF008251F8F09E35EF08E3B133DC
+        7FF19AFA0957C156B54A9BFCCFD36AE6390660E389C4B4A6BBDD35F768CF9AFC
+        2E3678874DE738BA84647721C7A57EC2DD7FC8166FFAE0DFFA0D7C276BFF0004
+        ACF1F585DC33A6BDE102F03AC8B99EE0F20E47FCB1AFB4678FC5127C39308874
+        31E247B731E3ED127D8C3E31BB7797BF1DF1B6B9334AF4EAB83A6EE789C638FC
+        3636545E1AA2959BBF95EDFE47E496AFFF00216BBFFAEEFF00FA157EB87C1EFF
+        00923BE15FFB035AFF00E884AF8A26FF00825678F6E66695F5DF080323166C4D
+        72792793FEAABEC4F877A2F8AFC29F07EC74ABD4D0A5D7F4CB34B385A1B897EC
+        936C50AACC4C7B87039001AACCEBD3AB084612BD8D38C331C2E2E952587A8A4E
+        2DDFE763F2CFE26FFC947F107B6A339FFC8AD5FA91FB2F01FF000CEDE09E07FC
+        81ADBFF45AD7C8DAEFFC12EBE206BDAC5E5F4DAE78384D792B4EE167B9DBB989
+        240FDCF4C9EB5F5CFC02F08F88BE1D7C27D2F42D70E9135EE8F6EB69049633C8
+        D14C8830A5B7C6A54E319C03DE96655E9D4A518C1DDAFF0020E2DCCB098AC252
+        861EA2938BD57CAC7E7E7EDE5FF275DE2DFF00AED0FF00E93C55F60FFC135FFE
+        4D62C3FEBF6EBFF43AF27F8D7FF04F5F889F19BE286ADE269F55F075ACBAA4DB
+        C42B7172C2355555419F2467E5519E3D6BDCBF63FF00833E2AF803F0FA5F0D6B
+        B3685796914CF3DA4F633CA5FE7392AEAD1AE067A1049A78CAF4E5858D38CAED
+        5BF2B0F3CCC70B5B27A586A55139C796EBD1599F227FC14BBFE4E8EF7FEBC2D7
+        FF004035F407FC129F9F81BADFFD865CFF00E428EB9BFDA53F610F881FB407C5
+        8BFF00121D4BC23651CE121B783ED170C5234501773793C93DC74E4D7A6FEC55
+        FB3EF8BBF66DD1F50D1759B9F0F5FE997B706EE396CE798CF1C8542ED2AD1A82
+        B851CE734622BD2960D525257560CCB31C2D4C8A1858544E7151BAF4DCF78C52
+        3FDD34B4D9B3E59C1C1AF10FCF8FCEEFF82A1FFC9C845FF60883FF004292BD27
+        FE099FE11B2F1E7C0AF1DE8BA8C426B1D46E96DE5423F85A32323DC7047B8157
+        BF6A2FD873C7BFB44FC57B8D7D750F09585A8892D6DA27B9B867F2D7382D8871
+        BB93D335DC7EC59FB3578BFF006685D534FD5AEBC3B7FA5EA922CE1ED2698CF1
+        48A0AF468D54A9FAE6BDCAB88A6F06A9C65EF2B7E07E898CCD30CF22861A9D55
+        ED22A3A27D9A7F81F047C5FF008697BF07BE256ABE1DBF044DA74EC8AF823CE4
+        EAAE0FA15239F5FA57E86FEC29F1EBFE176FC15B64BC9BCCD73420B677A18FCD
+        200311C87FDE51CFB835CBFEDA9FB166A9FB47F8A34BD57419745D3EEEDADDAD
+        EEA6BC9A5433AE72836A46D9DBCF248EB585FB2C7EC61F11BF66EF8907564D5F
+        C2B7BA6DE466DEFAD52E6E01963CF05730E3729E467E99E69E27114B11875CCE
+        D243CD733C166795C5D59A8D64AF6F3EABE672FF00F055AF85F76758F0FF008C
+        2185E4B2FB39D32E9C0C889C3178F3E81B73F3EA00EF5E33FB27FED6BA8FECC3
+        ABEA223B04D5F4AD502FDA2D7CDF29C3A8F96457C100F24118E71F8D7E95F8AF
+        C27A778E7C3B75A4EAB690DED85F218E68645CAB0CFF003F43ED5F1FFC4FFF00
+        8251CD71AB4937843C436D0DA48C4A5AEA6AD988673B44880E47D573EF4B078C
+        A2E8FB0AFB19E479F606A607FB3B31D12DB7B357BF4D534797FED5FF00B71DEF
+        ED27A0DAE8D69A5FF63E9114C2E254331965B87030327002A8CF4F5E6B73FE09
+        85F0BEEFC4FF001D4F89BCA61A7F86EDE5CCD8215A6951A3541EBF2339F6C01D
+        EBA5F047FC127B58935246F12F89B4C86CB702F1E9B1C92C920EE373AAE3EB83
+        5F607C2EF85FA27C20F0A5B689A0DA25A595B8CE3ABCAC472EC7BB1F5AAC4E32
+        853A0E8E1FA9AE6D9EE5D86C03C065BAF35D697B2BEFABDDB474B451457827E7
+        214119A28A004D82B3358F04E8FE206CDF6976176C7BCB02B1FCC8CD14534EDB
+        1519CA2EF176285B7C21F0BDA4A1E3D034A571D0FD99091FA56EDA69D0584223
+        82248635E02228551F851453726F7639D59CBE26D9285DB4A0628A2A48023348
+        100345140086304F7A555DB451400B45145001411914514009B40EC297005145
+        0004668C0F4A28A004DA0F614140C7900E3DA8A28002A08E828DA339C0CD1450
+        01B47A0A5C0F4A28A004DA318C0A5C01D871451400514514009B47A0A0A83D85
+        145001B47A0A368C7414514006D19CE0668DA3D05145002E01A4DA33D0514500
+        2D1451401FFFD9
+      }
+      Proportional = True
+    end
+  end
+  object P_lateral: TPanel
+    Left = 0
+    Height = 732
+    Top = 48
+    Width = 192
+    Align = alLeft
+    ClientHeight = 732
+    ClientWidth = 192
+    TabOrder = 2
+    Visible = False
+    object B_explicacion: TButton
+      Left = 8
+      Height = 40
+      Top = 96
+      Width = 178
+      Caption = 'Explicacion'
+      OnClick = B_explicacionClick
+      TabOrder = 0
+    end
+    object B_ejercitacion: TButton
+      Left = 8
+      Height = 40
+      Top = 148
+      Width = 178
+      Caption = 'Ejercitacion'
+      OnClick = B_ejercitacionClick
+      TabOrder = 1
+    end
+    object B_evaluacion: TButton
+      Left = 8
+      Height = 40
+      Top = 200
+      Width = 178
+      Caption = 'Evaluación'
+      OnClick = B_evaluacionClick
+      TabOrder = 2
+    end
+    object L_alumno: TLabel
+      Left = 8
+      Height = 18
+      Top = 12
+      Width = 178
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Alumno'
+      Color = 16744703
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Name = '@Arial Unicode MS'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+      ParentShowHint = False
+      Transparent = False
+    end
+    object DBT_nombre: TDBText
+      Left = 8
+      Height = 18
+      Top = 40
+      Width = 178
+      Alignment = taCenter
+      AutoSize = False
+      Color = clWhite
+      DataField = 'nombre'
+      DataSource = Modulo_Datos.DataSource1
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+    object GB_opciones: TGroupBox
+      Left = 24
+      Height = 136
+      Top = 252
+      Width = 133
+      Caption = 'Opciones'
+      ClientHeight = 116
+      ClientWidth = 129
+      Color = clNone
+      ParentColor = False
+      TabOrder = 3
+      object B_cambiar_usuario: TButton
+        Left = 0
+        Height = 28
+        Top = 32
+        Width = 129
+        Align = alBottom
+        Caption = 'Cambiar Usuario'
+        Color = clRed
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        OnClick = B_cambiar_usuarioClick
+        ParentFont = False
+        TabOrder = 0
+      end
+      object B_salir: TButton
+        Left = 0
+        Height = 28
+        Top = 88
+        Width = 129
+        Align = alBottom
+        Caption = 'SALIR'
+        Color = clRed
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        OnClick = B_salirClick
+        ParentFont = False
+        TabOrder = 1
+      end
+      object B_cambiar_contra: TButton
+        Left = 0
+        Height = 28
+        Top = 60
+        Width = 129
+        Align = alBottom
+        Caption = 'Cambiar Contraseña'
+        Color = clRed
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -11
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        OnClick = B_cambiar_contraClick
+        ParentFont = False
+        TabOrder = 2
+      end
+      object B_administrar: TButton
+        Left = 0
+        Height = 28
+        Top = 0
+        Width = 129
+        Caption = 'Administrar Usuarios'
+        Color = clFuchsia
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -11
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        OnClick = B_administrarClick
+        ParentFont = False
+        TabOrder = 3
+      end
+    end
+    object B_evaluar_profesor: TButton
+      Left = 8
+      Height = 40
+      Top = 208
+      Width = 178
+      Caption = 'EVALUAR'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -13
+      Font.Name = 'Arial Black'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = B_evaluar_profesorClick
+      ParentFont = False
+      TabOrder = 4
+      Visible = False
+    end
+  end
+end

@@ -1,0 +1,2 @@
+﻿¿Cuál es la instrucción de lectura en 
+Pascal que permite saltar una línea?

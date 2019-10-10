@@ -1,0 +1,4 @@
+﻿Scanf
+Read
+Rewrite
+ReadLn

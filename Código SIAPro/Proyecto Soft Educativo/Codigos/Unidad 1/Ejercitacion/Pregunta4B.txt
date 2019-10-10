@@ -1,0 +1,4 @@
+﻿Var aux:=6;
+Var bas:real;
+Var suma:=’real’;
+Var Int aux;

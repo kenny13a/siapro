@@ -1,0 +1,62 @@
+object F_contenidos: TF_contenidos
+  Left = 0
+  Height = 353
+  Top = 0
+  Width = 589
+  ClientHeight = 353
+  ClientWidth = 589
+  TabOrder = 0
+  DesignLeft = 550
+  DesignTop = 411
+  object P_contenidos_1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 589
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 589
+    TabOrder = 0
+    object B_contenidos_exp: TButton
+      Left = 8
+      Height = 34
+      Top = 5
+      Width = 99
+      Caption = 'Explicacion'
+      TabOrder = 0
+    end
+    object B_contenidos_ejr: TButton
+      Left = 112
+      Height = 34
+      Top = 5
+      Width = 99
+      Caption = 'Ejercitacion'
+      TabOrder = 1
+    end
+    object B_contenidos_eva: TButton
+      Left = 216
+      Height = 34
+      Top = 5
+      Width = 99
+      Caption = 'Evaluacion'
+      TabOrder = 2
+    end
+    object B_contenidos_cerrar: TButton
+      Left = 545
+      Height = 48
+      Top = 1
+      Width = 43
+      Align = alRight
+      Caption = 'Cerrar'
+      TabOrder = 3
+    end
+  end
+  object I_contenidos_1: TImage
+    Left = 0
+    Height = 303
+    Top = 50
+    Width = 589
+    Align = alClient
+    Stretch = True
+  end
+end

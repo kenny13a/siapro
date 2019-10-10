@@ -1,0 +1,4 @@
+﻿Cont
+Const
+var
+Type

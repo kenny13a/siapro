@@ -1,0 +1,231 @@
+object Frame1: TFrame1
+  Left = 0
+  Height = 561
+  Top = 0
+  Width = 772
+  ClientHeight = 561
+  ClientWidth = 772
+  TabOrder = 0
+  DesignLeft = 481
+  DesignTop = 363
+  object L_explicacion_1: TLabel
+    Left = 106
+    Height = 41
+    Top = 64
+    Width = 184
+    Caption = 'Explicación'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Arial Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object L_explicacion_2: TLabel
+    Left = 16
+    Height = 24
+    Top = 115
+    Width = 364
+    Caption = 'Seleccione qué unidad desea aprender'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object B_explicacion_1: TButton
+    Left = 161
+    Height = 25
+    Top = 147
+    Width = 75
+    Caption = 'Unidad 1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object B_explicacion_2: TButton
+    Left = 161
+    Height = 25
+    Top = 179
+    Width = 75
+    Caption = 'Unidad 2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+  end
+  object B_explicacion_3: TButton
+    Left = 161
+    Height = 25
+    Top = 211
+    Width = 75
+    Caption = 'Unidad 3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object B_explicacion_u4: TButton
+    Left = 161
+    Height = 28
+    Top = 243
+    Width = 75
+    Caption = 'Unidad 4'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+  end
+  object B_exp_cerrar: TButton
+    Left = 109
+    Height = 25
+    Top = 291
+    Width = 179
+    Caption = 'CERRAR'
+    TabOrder = 5
+    Visible = False
+  end
+  object P_exp_1: TPanel
+    Left = 328
+    Height = 320
+    Top = 208
+    Width = 408
+    ClientHeight = 320
+    ClientWidth = 408
+    TabOrder = 4
+    Visible = False
+    object P_exp_1_1: TPanel
+      Left = 1
+      Height = 79
+      Top = 240
+      Width = 406
+      Align = alBottom
+      ClientHeight = 79
+      ClientWidth = 406
+      TabOrder = 0
+      object GB_exp_1: TGroupBox
+        Left = 8
+        Height = 64
+        Top = 8
+        Width = 64
+        Caption = 'Páginas'
+        ClientHeight = 44
+        ClientWidth = 60
+        TabOrder = 0
+        object EB_exp_1: TEdit
+          Left = 8
+          Height = 23
+          Top = 0
+          Width = 24
+          TabOrder = 0
+          Text = '0'
+        end
+        object L_exp_3: TLabel
+          Left = 37
+          Height = 15
+          Top = 4
+          Width = 14
+          Caption = '/ 0'
+          ParentColor = False
+        end
+        object B_exp_5: TButton
+          Left = 8
+          Height = 17
+          Top = 24
+          Width = 43
+          Caption = 'Ir'
+          Enabled = False
+          TabOrder = 1
+        end
+      end
+      object B_exp_6: TButton
+        Left = 80
+        Height = 41
+        Top = 16
+        Width = 75
+        Caption = 'Anterior'
+        TabOrder = 1
+      end
+      object B_exp_7: TButton
+        Left = 160
+        Height = 41
+        Top = 16
+        Width = 75
+        Caption = 'Siguiente'
+        TabOrder = 2
+      end
+      object B_exp_8: TButton
+        Left = 240
+        Height = 41
+        Top = 16
+        Width = 75
+        Caption = 'Volver'
+        TabOrder = 3
+        Visible = False
+      end
+      object B_exp_9: TButton
+        Left = 320
+        Height = 41
+        Top = 16
+        Width = 75
+        Caption = 'Cerrar'
+        TabOrder = 4
+        Visible = False
+      end
+    end
+    object I_exp_1: TImage
+      Left = 1
+      Height = 239
+      Top = 1
+      Width = 406
+      Align = alClient
+      Stretch = True
+    end
+  end
+  object P_exp_superior: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 772
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 772
+    TabOrder = 6
+    object B_exp_10: TButton
+      Left = 1
+      Height = 48
+      Top = 1
+      Width = 111
+      Align = alLeft
+      AutoSize = True
+      Caption = 'Cambiar unidad'
+      TabOrder = 0
+    end
+    object B_exp_11: TButton
+      Left = 696
+      Height = 48
+      Top = 1
+      Width = 75
+      Align = alRight
+      Caption = 'Cerrar'
+      TabOrder = 1
+    end
+  end
+end

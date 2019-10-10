@@ -1,0 +1,1 @@
+﻿¿Cómo se define una variable en C?
