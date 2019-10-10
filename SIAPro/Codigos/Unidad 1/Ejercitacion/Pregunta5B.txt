@@ -1,0 +1,4 @@
+﻿Asignar variables
+Inicializar y acumular variable
+Incrementar variable
+Acumular valores

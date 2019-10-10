@@ -1,0 +1,4 @@
+﻿Acumulador
+Constante
+Asignación
+Contador
